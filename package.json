@@ -8,12 +8,14 @@
   "license": "",
   "private": false,
   "scripts": {
-    "start": "webpack-dev-server --mode development --open",
-    "build": "webpack --mode production"
+    "start": "SET NODE_OPTIONS=--openssl-legacy-provider && webpack-dev-server --mode development --open",
+    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && webpack --mode production"
   },
   "dependencies": {
-    "react": "^16.3.1",
-    "react-dom": "^16.3.1"
+    "core-js": "^3.35.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "regenerator-runtime": "^0.14.1"
   },
   "devDependencies": {
     "babel-core": "6.26.*",
